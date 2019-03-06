@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" verbose="10">
+	<test name="Test+FF+Selenium">
+		<parameter name="browserType" value="FF" />
+		<parameter name="jobType" value="Selenium" />
+		<parameter name="url" value="https://www.indeed.com"/>
+		<classes>
+			<class name="org.h2k.CrossBrowserTesting"/>
+		</classes>
+	</test> <!--  Test -->
+	<test name="Test+IE+Java">
+		<parameter name="browserType" value="IE" />
+		<parameter name="jobType" value="Selenium" />
+		<parameter name="url" value="https://www.indeed.com"/>
+		<classes>
+			<class name="org.h2k.CrossBrowserTesting"/>
+		</classes>
+	</test> <!-- Test -->
+	<test name="Test+CH+QTP">
+		<parameter name="browserType" value="CH" />
+		<parameter name="jobType" value="QTP" />
+		<parameter name="url" value="https://www.indeed.com"/>
+		<classes>
+			<class name="org.h2k.CrossBrowserTesting"/>
+		</classes>
+	</test> <!--   Test -->
+</suite> <!-- Suite -->
