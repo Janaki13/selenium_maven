@@ -21,8 +21,7 @@ package org.h2k;
 			driver.get(url);
 			 	
 			WebElement e;
-			e  = driver.findElement(By.id("text-input-what"));
-			e.sendKeys(jobType);
+			e  = driver.findElement(By.id("text-input-what")).sendKeys(jobType);
 			driver.findElement(By.tagName("button")).click();
 		}
 	}
